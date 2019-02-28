@@ -10,6 +10,14 @@
   <description>
     BOM for google-cloud-java
   </description>
+  <properties>
+    <api.common.version>1.7.0</api.common.version>
+    <api.gax.bom.version>1.40.0</api.gax.bom.version>
+    <api.grpc.proto.protos.version>1.14.0</api.grpc.proto.protos.version>
+    <api.grpc.grpc.protos.version>1.14.0</api.grpc.grpc.protos.version>
+    <api.grpc.proto.iam.v1.version>0.12.0</api.grpc.proto.iam.v1.version>
+    <api.grpc.grpc.iam.v1.version>0.12.0</api.grpc.grpc.iam.v1.version>
+  </properties>
   <developers>
     <developer>
       <id>garrettjonesgoogle</id>
@@ -163,34 +171,34 @@
       <dependency>
         <groupId>com.google.api</groupId>
         <artifactId>api-common</artifactId>
-        <version>1.7.0</version>
+        <version>${api.common.version}</version>
       </dependency>
       <dependency>
         <groupId>com.google.api</groupId>
         <artifactId>gax-bom</artifactId>
-        <version>1.40.0</version>
+        <version>${api.gax.bom.version}</version>
         <type>pom</type>
         <scope>import</scope>
       </dependency>
       <dependency>
         <groupId>com.google.api.grpc</groupId>
         <artifactId>proto-google-common-protos</artifactId>
-        <version>1.14.0</version>
+        <version>${api.grpc.proto.protos.version}</version>
       </dependency>
       <dependency>
         <groupId>com.google.api.grpc</groupId>
         <artifactId>grpc-google-common-protos</artifactId>
-        <version>1.14.0</version>
+        <version>${api.grpc.grpc.protos.version}</version>
       </dependency>
       <dependency>
         <groupId>com.google.api.grpc</groupId>
         <artifactId>proto-google-iam-v1</artifactId>
-        <version>0.12.0</version>
+        <version>${api.grpc.proto.iam.v1.version}</version>
       </dependency>
       <dependency>
         <groupId>com.google.api.grpc</groupId>
         <artifactId>grpc-google-iam-v1</artifactId>
-        <version>0.12.0</version>
+        <version>${api.grpc.grpc.iam.v1.version}</version>
       </dependency>
 
       <!-- API-specific dependencies -->

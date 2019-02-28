@@ -16,6 +16,12 @@
   <properties>
     <site.installationModule>google-cloud-testing</site.installationModule>
     <appengine.sdk.version>1.9.51</appengine.sdk.version>
+    <!-- We are currently using the *-android version to support JDK7. -->
+    <guava.version>26.0-android</guava.version>
+    <junit.version>4.12</junit.version>
+    <objenesis.version>2.6</objenesis.version>
+    <truth.version>0.30</truth.version>
+    <easymock.version>3.4</easymock.version>
   </properties>
 
   <modules>
@@ -57,28 +63,27 @@
       <dependency>
         <groupId>com.google.guava</groupId>
         <artifactId>guava-testlib</artifactId>
-        <!-- We are currently using the *-android version to support JDK7. -->
-        <version>26.0-android</version>
+        <version>${guava.version}</version>
       </dependency>
       <dependency>
         <groupId>junit</groupId>
         <artifactId>junit</artifactId>
-        <version>4.12</version>
+        <version>${junit.version}</version>
       </dependency>
       <dependency>
         <groupId>org.objenesis</groupId>
         <artifactId>objenesis</artifactId>
-        <version>2.6</version>
+        <version>${objenesis.version}</version>
       </dependency>
       <dependency>
         <groupId>com.google.truth</groupId>
         <artifactId>truth</artifactId>
-        <version>0.30</version>
+        <version>${truth.version}</version>
       </dependency>
       <dependency>
         <groupId>org.easymock</groupId>
         <artifactId>easymock</artifactId>
-        <version>3.4</version>
+        <version>${easymock.version}</version>
         <exclusions>
           <exclusion>
             <groupId>org.objenesis</groupId>

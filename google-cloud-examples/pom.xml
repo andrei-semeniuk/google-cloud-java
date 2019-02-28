@@ -12,6 +12,7 @@
   </description>
   <properties>
     <site.installationModule>google-cloud-examples</site.installationModule>
+    <junit.version>4.12</junit.version>
   </properties>
   <dependencyManagement>
     <dependencies>
@@ -90,7 +91,7 @@
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
-      <version>4.12</version>
+      <version>${junit.version}</version>
       <scope>test</scope>
     </dependency>
   </dependencies>
